@@ -4,14 +4,14 @@ import java.util.Scanner;
 // Take integer inputs till the user enters 0 and print the sum of all numbers (HINT: while loop)
 public class sumOfAllnum {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
+        int sum = 0;
         while(true){
-            int sum = 0;
-            int value = input.nextInt();
+            int value = in.nextInt();
             if(value == 0) {
-                return;
+                break;
             }
-            sum += value; 
+            sum = sum + value;
             System.out.println(sum);
         }
     }
